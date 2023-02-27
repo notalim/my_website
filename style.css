@@ -6,6 +6,9 @@
         Menlo, Consolas, monospace;
 }
 
+a {
+    text-decoration: none;
+}
 body {
     background-color: #1b1725;
     color: #f8f8f8;
@@ -185,7 +188,6 @@ nav a.active {
 }
 
 .download-button {
-    
     margin-top: 20px;
     background-color: #8c59b1;
     color: #f8f8f8;
@@ -194,7 +196,7 @@ nav a.active {
     padding: 10px 40px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;  
+    transition: background-color 0.3s ease-in-out;
     margin-top: 60px;
 }
 
@@ -222,8 +224,7 @@ nav a.active {
 
 .portfolio-card {
     width: 30%;
-    height: 280px;
-    background-color: #ffffff;
+    height: 350px;
     border-radius: 20px;
     box-shadow: 0 0 20px #cb80ff;
     padding: 20px;
@@ -277,6 +278,7 @@ nav a.active {
 }
 
 .portfolio-card h3 {
+    padding-top: 20px;
     font-size: 1rem;
     color: inherit;
     transition: all 0.3s ease;
@@ -284,9 +286,37 @@ nav a.active {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 0 #cb80ff;
 }
 
+.portfolio-card p {
+    font-size: 1rem;
+    color: inherit;
+    padding-top: 20px;
+}
+
 .portfolio-card img {
     max-width: 100%;
     border-radius: 20px;
+}
+
+.view-more-button {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #cb80ff;
+    background-color: #241b35;
+    font: bold;
+    transition: 500ms linear;
+    font-size: 1.6rem;
+    padding: 15px 30px;
+    color: #f8f8f8;
+    border: none;
+    margin-top: 60px;
+    text-decoration: none;
+}
+
+.view-more-button:hover {
+    transition: all 0.3s ease;
+    background-color: #8c59b1;
 }
 
 @media screen and (max-width: 768px) {
@@ -392,8 +422,138 @@ textarea {
     color: #f8f8f8;
     text-decoration: none;
     transition: all 0.3s ease;
+    position: relative;
 }
 
-.contact-links a:hover {
-    color: #8956f1;
+.contact-links a[id="linkedin"]:hover {
+    color: #0072b1;
+}
+.contact-links a[id="github"]:hover {
+    color: #c9510c;
+}
+
+.contact-links a[id="instagram"]:hover {
+    color: #a618a6;
+}
+
+.contact-links a[id="discord-link"]:hover {
+    color: #7289da;
+}
+
+/* PORTFOLIO PAGE ONLY */
+
+.p-main-content h1 {
+    padding: 100px 0 40px; /* Adjust the top and bottom padding */
+    text-align: center;
+}
+
+.p-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-cards {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%; /* Set to 100% */
+    justify-content: space-between;
+}
+
+.project-card {
+    width: 320px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #cb80ff;
+    padding: 20px;
+    background-color: #241b35;
+    position: relative;
+    transition: 500ms linear;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.project-card a {
+    display: block;
+    height: 100%;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    background-color: #241b35;
+    text-decoration: none;
+}
+
+.project-date {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    background-color: #241b35;
+    text-decoration: none;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.project-description {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    background-color: #241b35;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.project-card::before {
+    content: "";
+    z-index: -1;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #cb80ff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-card::after {
+    z-index: 3;
+    color: #f8f8f8;
+    background-color: rgba(203, 128, 255, 0.8);
+    box-shadow: 0 0 20px #cb80ff;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-card:hover::before {
+    transition: transform 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+    color: #cb80ff;
+}
+
+.project-card:hover::after {
+    transform: translateY(10px);
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
