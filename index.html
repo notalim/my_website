@@ -12,7 +12,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -28,16 +28,17 @@
                 </div>
                 <img src="./assets/vector_test.png" alt="Your Image" />
             </div>
+            <a href="#contact" class="contact-button">contact me!</a>
         </div>
 
         <div class="about-me" id="about">
             <div class="about-container">
                 <div class="about-desc">
-                    <h2>hey, my name is alim!</h2>
+                    <h2>nice to meet you, my name is alim!</h2>
                     <p>
                         i'm a junior computer science student at stevens! i'm
                         trying to make it in the programming world.
-                        <br /><br />
+                        <br />
                         make sure to contact me using one of my links below!
                     </p>
                     <a href="assets/akassymov_resume.pdf" download
@@ -80,37 +81,59 @@
             </div>
         </div>
 
-       <section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-form">
-    <form action="#" method="POST">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email Address" required />
-      </div>
-      <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
-      </div>
-      <div class="submit-container">
-        <input type="submit" value="Send" />
-      </div>
-    </form>
-  </div>
-  <div class="contact-links">
-    <h3 id="social-text">You can also contact me using my socials!</h3>
-    <div class="socials">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Instagram</a>
-      <a href="#">Discord</a>
-    </div>
-  </div>
-</section>
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/alimneedstowork@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div>
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email Address"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Type your message here..."
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="submit-container">
+                        <input type="submit" value="Send" />
+                    </div>
+                </form>
+            </div>
+            <div class="contact-links">
+                <h3 id="social-text">
+                    You can also contact me using my socials!
+                </h3>
+                <div class="socials">
+                    <a href="https://linkedin.com/in/notalim/">LinkedIn</a>
+                    <a href="https://github.com/notalim/">GitHub</a>
+                    <a href="https://instagram.com/ricefeelings/">Instagram</a>
+                    |
+                    <a href="#" id="discord-link">Discord: notalim#2105</a>
+                </div>
+            </div>
+        </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="app.js"></script>

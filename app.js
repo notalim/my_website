@@ -8,7 +8,8 @@ navItems.forEach((item) => {
         item.classList.add("active");
     });
 });
-// smooth scroll
+
+// * smooth scroll
 $("nav a").on("click", function (e) {
     e.preventDefault();
     var target = $(this).attr("href");
@@ -21,6 +22,7 @@ $("nav a").on("click", function (e) {
     );
 });
 
+// * typewriter in the main
 // Set a timeout function to remove the text after 3 seconds
 
 const headerText = "definitely notalim!"; // text to be typed out
@@ -56,6 +58,7 @@ typeWriter();
 
 const heading = document.querySelector("#social-text");
 
+// * animate contacts heading
 function animateHeading() {
     const colors = [
         "#8956F1",
@@ -81,3 +84,10 @@ function animateHeading() {
 }
 
 animateHeading();
+
+// * discord link copy
+document.querySelector('#discord-link').addEventListener('click', function() {
+  const discordHandle = 'notalim#2105';
+  navigator.clipboard.writeText(discordHandle);
+  alert('tag copied to clipboard: ' + discordHandle);
+});

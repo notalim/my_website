@@ -80,9 +80,8 @@ nav a.active {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; /* align items to the left */
-    height: calc(100vh - 350px);
+    height: 400px;
     background-color: #241b35; /* add background color */
-
     padding: 50px; /* add padding */
     margin-top: 100px;
 }
@@ -102,8 +101,8 @@ nav a.active {
 }
 
 #header-text {
-    font-size: 3rem;
-    color: #ffffff;
+    font-size: 3.5rem;
+    color: #ea94ff;
     margin-bottom: 0.5rem;
     height: 3rem; /* set a fixed height */
     line-height: 3rem; /* set line-height equal to height */
@@ -126,6 +125,25 @@ nav a.active {
     max-width: 100%;
 }
 
+.contact-button {
+    display: flex;
+    /* margin: 0 auto; */
+    text-align: center;
+    padding: 10px 78px;
+    background-color: #8c59b1;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: #cb80ff;
+}
+
 .about-me {
     border-radius: 20px;
     box-shadow: 0 0 20px #cb80ff;
@@ -133,8 +151,6 @@ nav a.active {
     width: 95%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 50px;
     background-color: #241b35;
 }
@@ -144,7 +160,7 @@ nav a.active {
 }
 
 .about-desc {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .about-me img {
@@ -169,15 +185,17 @@ nav a.active {
 }
 
 .download-button {
+    
     margin-top: 20px;
     background-color: #8c59b1;
     color: #f8f8f8;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;  
+    margin-top: 60px;
 }
 
 .download-button:hover {
@@ -310,7 +328,6 @@ nav a.active {
     margin-bottom: 10px;
 }
 
-
 .contact-form input,
 .contact-form textarea {
     display: flex;
@@ -323,12 +340,9 @@ nav a.active {
     color: #f8f8f8;
 }
 
-
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    
     margin-right: 250px;
 }
 
@@ -381,6 +395,5 @@ textarea {
 }
 
 .contact-links a:hover {
-    
     color: #8956f1;
 }
