@@ -309,6 +309,7 @@ nav a.active {
     padding: 15px 30px;
     color: #f8f8f8;
     border: none;
+    cursor: pointer;
     margin-top: 60px;
     text-decoration: none;
 }
@@ -482,6 +483,7 @@ textarea {
 .project-card img {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .project-card h3 {
