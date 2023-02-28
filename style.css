@@ -4,11 +4,13 @@
     padding: 0;
     font-family: "SF Mono", SFMono-Regular, ui-monospace, "DejaVu Sans Mono",
         Menlo, Consolas, monospace;
+    
 }
 
 a {
     text-decoration: none;
 }
+
 body {
     background-color: #1b1725;
     color: #f8f8f8;
@@ -116,6 +118,7 @@ nav a.active {
     color: #f8f8f8;
     margin-top: 0;
     margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
 .content-container img {
@@ -227,12 +230,19 @@ nav a.active {
     border-radius: 20px;
     box-shadow: 0 0 20px #cb80ff;
     padding: 20px;
+    color: #f8f8f8;
     background-color: #241b35;
     position: relative;
     transition: 500ms linear;
+    
 }
 
-.portfolio-card::before {
+.portfolio-card a {
+    color: #f8f8f8;
+    transition: 500ms ease;
+}
+
+.portfolio-card a::before {
     content: "";
     z-index: -1;
     border-radius: 20px;
@@ -246,7 +256,7 @@ nav a.active {
     height: 100%;
 }
 
-.portfolio-card::after {
+.portfolio-card a::after {
     z-index: 3;
     color: #f8f8f8;
     background-color: rgba(203, 128, 255, 0.8);
@@ -258,7 +268,7 @@ nav a.active {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.portfolio-card:hover::before {
+.portfolio-card a:hover::before {
     transition: transform 0.3s ease-in-out;
     opacity: 1;
 }
@@ -266,6 +276,9 @@ nav a.active {
 .portfolio-card:hover {
     transform: translateY(-10px);
     transition: transform 0.3s ease-in-out;
+    
+}
+.portfolio-card a:hover {
     color: #cb80ff;
 }
 
@@ -460,6 +473,7 @@ textarea {
     flex-wrap: wrap;
     width: 95%; /* Set to 100% */
     justify-content: space-between;
+    
 }
 
 .project-card {
@@ -473,6 +487,7 @@ textarea {
     transition: 500ms linear;
     box-sizing: border-box;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .project-card a {
