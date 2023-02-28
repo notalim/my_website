@@ -74,7 +74,6 @@ nav a.active {
 }
 
 .main-content {
-    background-color: #f8f8f8;
     border-radius: 20px;
     box-shadow: 0 0 20px #cb80ff;
     margin: -80px auto 0;
@@ -556,4 +555,83 @@ textarea {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
+}
+
+/* PROJECT STUB */
+
+.s-project-container {
+    border-radius: 20px;
+    box-shadow: 0 0 20px #cb80ff;
+    margin: -80px auto 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* align items to the left */
+    height: 500px;
+    background-color: #241b35; /* add background color */
+    padding: 50px; /* add padding */
+    margin-top: 100px;
+}
+
+.s-project-image {
+    width: 50%;
+    height: auto;
+}
+
+.s-project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.s-image-description {
+    padding-top: 5px;
+    margin: 0;
+    font-size: 1rem;
+    color: #f8f8f8;
+    background-color: #241b35;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.s-project-description {
+    width: 45%;
+    color: #fff;
+}
+
+.s-project-description p {
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.s-project-description h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.s-date, .s-soft {
+    margin: 0;
+    font-size: 0.6rem;
+    color: #f8f8f8;
+    background-color: #241b35;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.s-project-description .s-link a {
+    color: #cb80ff;
+    text-decoration: none;
+    transition: 500ms ease;
+}
+
+.s-project-description .s-link a:hover {
+    color: #8c59b1;
+}
+
+.s-description-text {
+    font-size: 1rem;
+    line-height: 1.5;
 }

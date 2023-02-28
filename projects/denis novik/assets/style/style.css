@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+/* HEADER */
+
+header{
+    align-items: center;
+    margin: 0 auto;
+    height: 735px;
+    background-color: #F6F6F6;
+}
+
+.links{
+    padding-top: 10px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    color: #828282;
+    
+
+    padding-bottom: 32px;
+    
+    border-bottom: 1px solid #828282;
+}
+
+.links li a{
+    text-decoration: none;
+    color: #828282;
+}
+
+.links li a:hover {
+    color: black;
+}
+
+.intro{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.job_name{
+    font-weight: 500;
+    padding-top: 60px;
+}
+
+.lang_name{
+    padding-top: 74px;
+    transform: rotate(-90deg);
+    font-weight: 500;
+}
+
+.lang_name span{
+    font-weight: bold;
+}
+
+.photo{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+}
+
+/* ABOUT ME */
+
+h2 {
+    padding-top: 120px;
+    font-size: 34px;
+}
+
+.aboutme{
+    height: 500px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutme p {
+    padding-top: 10px;
+}
+
+/* SKILLS */
+
+.skills{
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.desc{
+    padding-top: 70px;
+}
+
+.tools{
+    width:70%;
+    padding-top: 84px;
+    justify-content: space-between;
+    display:flex;
+    margin: 0 auto;
+}
+
+.tool_name{
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #828282;
+    padding-bottom: 40px;
+}
+
+.figma img{
+    width: 60px
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+    height: 2200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+
+.portfolio h2{
+    padding-bottom: 47px;
+}
+
+.pdesc{
+    text-decoration: underline;
+    padding-top: 45px;
+    padding-bottom: 80px;
+}
+
+/* FOOTER */
+
+footer{
+    height: 480px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.chat{
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+footer button{
+    width: 160px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.icons{
+    padding-top: 85px;
+    display:flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.likeme {
+    font-size: 14px;
+    color: #828282;
+    padding-top: 20px;
+}
+
+
+

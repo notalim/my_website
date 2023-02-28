@@ -1,0 +1,1166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Ubuntu'
+    color: #1E212C
+    scroll-behavior: smooth
+a
+    text-decoration: none
+
+// 
+    // MAIN PAGE
+
+@mixin pipi()
+    font-weight: 700
+    font-size: 14px
+    color: #424551
+@mixin nepipi()
+    font-weight: 400
+    font-size: 18px
+    colot: #1E212C
+
+@mixin frontbuttons()
+    text-transform: uppercase
+    align-items: center
+    border-radius: 20px
+    text-align: center
+    letter-spacing: 0.5px
+    flex-direction: column
+    align-items: center
+    padding: 0px 40px
+    gap: 10px
+    border-radius: 4px
+    font-weight: 700
+    font-size: 16px
+    line-height: 52px
+    color: white
+    cursor: pointer
+
+@mixin centertext()
+    display: flex
+    margin: 0 auto
+    justify-content: center
+
+// HEADER
+
+.headermain
+    padding-top: 10px
+    width: 80%
+    display: flex
+    margin: 0 auto
+    align-items: center
+    .biba
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .logo
+            margin-right: 70px
+        .links
+            margin-right: 70px
+            ul
+                list-style-type: none
+                display: flex
+                justify-content: space-between
+                margin: 0 auto
+                width: 400px
+                li
+                    a
+                        text-decoration: none
+                        font-weight: 500
+                        color: #424551
+                        font-size: 16px
+                    a:hover
+                        color: black
+
+        .contacts
+            display: flex
+            width: 100%
+            justify-content: space-between
+            .callus
+                display: flex
+                line-height: 150%
+                width: 166px
+                justify-content: space-between
+                .img
+                    align-items: center
+                .pipi
+                    @include pipi()
+                .nepipi
+                    @include nepipi()
+
+            .talktous
+                display: flex
+                line-height: 150%
+                width: 210px
+                justify-content: space-between
+                .img
+                    align-items: center
+                .pipi
+                    @include pipi()
+                .nepipi
+                    @include nepipi()
+
+// FRONT SECTION
+
+.front
+    padding-top: 13px
+    .your-class
+        img
+            width: 100%
+        .slick-prev:before
+            content: "<-"
+            color: black
+            font-size: 30px≥
+
+    .slogan
+        .name
+            position: absolute
+            font-style: normal
+            font-weight: 700
+            font-size: 72px
+            line-height: 130%
+            color: white
+            top: 220px
+            left: 200px
+            span
+                color: #FF5A30
+        .desc
+            position: absolute
+            font-style: normal
+            font-weight: 400
+            font-size: 20px
+            line-height: 30px
+            color: white
+            top: 450px
+            left: 200px
+        .buttons
+            font-family: 'Ubuntu'
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 52px
+            display: flex
+            margin: 0 auto
+            color: #FFFFFF
+            flex: none
+            flex-grow: 0
+            position: absolute
+            top: 600px
+            left: 200px
+
+            .earn
+                @include frontbuttons
+                border: 1px solid #FFFFFF
+                background-color: transparent
+
+            .request
+                @include frontbuttons
+                background-color: #FF5A30
+                border-radius: 4px
+                margin-left: 24px
+                order: 1
+                border: none
+
+// WE ARE SECTION
+
+.weare
+    height: 1600px
+    align-items: center
+    position: relative
+
+    h2
+        @include centertext()
+        padding-top: 120px
+        color: #1E212C
+    .desc
+        p
+            @include centertext()
+            padding-top: 24px
+            font-weight: 400
+            color: #787A80
+
+            padding-bottom: 60px
+    .vidosik
+        height: 500px
+
+        display: flex
+        margin: 0 auto
+        align-items: center
+
+        background-image: url(../../img/people/Group.png)
+        width: 100%
+        background-position: center
+
+        button
+            background: none
+            border: none
+            display: flex
+            margin: 0 auto
+            justify-items: center
+
+    // CORE VALUES SECTION
+
+    .corevalues
+        h2
+            font-weight: 700
+            font-size: 46px
+            line-height: 130%
+
+        .values
+            width: 70%
+            padding-top: 60px
+            display: flex
+            margin: 0 auto
+            justify-content: space-between
+
+            .section
+                text-align: center
+                h3
+                    padding-top: 24px
+                p
+                    color: #787A80
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 160%
+                    padding-top: 6px
+
+    // WANT TO KNOW MORE SECTION
+
+    .wanttoknow
+        height: 200px
+        background-color: white
+        margin: 0 auto
+
+        width: 70%
+        top: 90%
+        left: 15%
+        position: absolute
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03)
+        border-radius: 4px
+
+        h3
+            padding-top: 10px
+            font-weight: 700
+            font-size: 22px
+            line-height: 150%
+            @include centertext()
+
+        .question
+            display: flex
+            margin: 0 auto
+            justify-content: space-between
+            width: 80%
+
+            .pupok
+
+                p
+                    padding-top: 32px
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 150%
+                    color: #424551
+
+                input
+                    background: #F4F5F7
+                    border: 1px solid #D7DADD
+                    border-radius: 4px
+                    height: 40px
+                    width: 200px
+
+            button
+
+                text-transform: uppercase
+                background: #FF5A30
+
+                align-items: center
+                color: white
+                font-weight: 700
+                font-size: 14px
+                letter-spacing: 0.5px
+                margin-top: 50px
+                border-radius: 4px 4px 4px 4px
+                width: 120px
+                border: none
+                cursor: pointer
+
+// OUR SERVICES
+
+.services
+
+    height: 800px
+
+    background: #F4F5F7
+    border: 0px solid #000000
+    background-image: url(../../img/backgrounds/bg-image.png)
+
+    h2
+        @include centertext()
+        padding-top: 200px
+        font-weight: 700
+        font-size: 46px
+        line-height: 130%
+
+    .desc
+        p
+            @include centertext()
+            color: #787A80
+            font-weight: 400
+            font-size: 16px
+            line-height: 160%
+            padding-top: 24px
+
+    .boxes
+        width: 70%
+        padding-top: 60px
+        display: flex
+        margin: 0 auto
+        justify-content: space-between
+
+        .box
+            height: 200px
+            width: 200px
+            background-color: white
+            margin: 0 auto
+            display: flex
+            align-items: center
+            border: 0.5px solid #E5E8ED
+            border-radius: 4px
+            flex-direction: column
+            box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03)
+
+            &:hover
+                box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05)
+                transition: 0.7s
+
+            img
+                padding-top: 50px
+
+            p
+                @include centertext()
+                padding-top: 10px
+                font-weight: 700
+                font-size: 16px
+                line-height: 150%
+
+    .learnmore
+        display: flex
+        margin: 0 auto
+        justify-items: center
+        width: 50%
+        padding-top: 85px
+        h3
+            font-weight: 700
+            font-size: 28px
+            line-height: 150%
+        button
+            @include frontbuttons
+            background-color: #FF5A30
+            border-radius: 4px
+            margin-left: 24px
+            order: 1
+            border: none
+
+// BROWSE SECTION
+
+.browse
+
+    height: 1000px
+    background-color: white
+
+    .hehe
+        display: flex
+        margin: 0 auto
+        width: 67%
+        align-items: center
+        justify-content: space-between
+        padding-top: 120px
+
+        h2
+
+            font-size: 46px
+            line-height: 130%
+            padding-bottom: 60px
+
+        img
+            width: 84px
+            height: 48px
+
+    .projects
+
+        display: flex
+        margin: 0 auto
+        width: 67%
+        justify-content: space-between
+
+        .project1
+
+            width: 300px
+            height: 400px
+            text-align: center
+            box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03)
+            border-radius: 4px
+            padding-bottom: 24px
+            position: relative
+
+            img
+                width: 300px
+            h2
+                margin-top: 16px
+                margin-bottom: 4px
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 700
+                font-size: 20px
+                line-height: 150%
+                text-align: center
+                color: #1E212C
+            p
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 150%
+                text-align: center
+                color: #787A80
+            button
+                width: 172px
+                height: 44px
+                border: 1px solid #FF5A30
+                border-radius: 4px
+                background: none
+                text-align: center
+                letter-spacing: 0.5px
+                text-transform: uppercase
+                color: #FF5A30
+                margin-top: 24px
+                margin-bottom: 24px
+            .abs_btn
+                width: 100%
+                min-height: 30%
+                background-color: #fff
+                position: absolute
+                bottom: 0
+                left: 0
+                display: none
+            &:hover
+                .abs_btn
+                    display: block
+                    transition-delay: 500ms
+    .explore
+        display: flex
+        margin: 0 auto
+        justify-items: center
+        width: 40%
+        padding-top: 85px
+        h3
+            font-weight: 700
+            font-size: 28px
+            line-height: 150%
+        button
+            @include frontbuttons
+            background-color: #FF5A30
+            border-radius: 4px
+            margin-left: 24px
+            order: 1
+            border: none
+
+// SUPPORTED SECTION
+
+.supported
+
+    height: 850px
+    background-color: #F4F5F7
+
+    h1
+        padding-top: 80px
+        width: 70%
+        @include centertext()
+        font-style: normal
+        font-weight: 700
+        font-size: 46px
+        line-height: 130%
+
+    .partners
+        padding-top: 32px
+        width: 70%
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+
+    .clients
+
+        width: 70%
+        display: flex
+        margin: 0 auto
+        padding-top: 170px
+        justify-content: space-between
+
+        .che
+
+            h2
+                font-weight: 700
+                font-size: 36px
+                line-height: 130%
+
+            .shawn
+                .photo
+                    width: 72px
+                    height: 72px
+                    margin-top: 65px
+                .desc
+                    padding-top: 24px
+                    padding-bottom: 24px
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 160%
+                    color: #424551
+
+                .name
+
+                    padding-bottom: 4px
+
+                    .sh
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 160%
+                        color: #1E212C
+
+                    .aaa
+                        display: flex
+                        margin: 0 auto
+                        justify-content: space-between
+
+                        p
+                            color: #787A80
+                            font-width: 200px
+
+                        .strelki
+                            width: 50px
+                            justify-content: space-between
+                            display: flex
+                            margin: 0 auto
+                            img
+                                height: 11px
+
+        .muzhiki
+            width: 400px
+            margin-bottom: -100px
+
+// FIGURES SECTION
+
+.facts
+    height: 1500px
+
+    h1
+        @include centertext()
+        padding-top: 160px
+        font-weight: 700
+        font-size: 46px
+        line-height: 130%
+
+    .figures
+
+        padding-top: 60px
+
+        display: flex
+        width: 50%
+        margin: 0 auto
+        justify-content: space-between
+
+        .figure
+
+            text-align: center
+
+            img
+
+                width: 100px
+
+            p
+                @include centertext()
+                font-weight: 400
+                font-size: 14px
+                line-height: 150%
+                padding-top: 20px
+
+    .news
+
+        display: flex
+        margin: 0 auto
+        width: 70%
+        justify-content: space-between
+        padding-top: 60px
+
+        .climate
+
+            img
+                width: 600px
+
+            a
+                h3
+                    padding-top: 20px
+                    padding-left: 14px
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 150%
+                    text-decoration: none
+
+                    &:hover
+                        color: #FF5A30
+
+            .info
+
+                display: flex
+
+                .comments
+                    width: 14px
+                    text-align: center
+                    margin-left: 7px
+
+                p
+                    padding-left: 14px
+                    font-family: 'Ubuntu'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 150%
+                    display: flex
+                    align-items: center
+                    color: #787A80
+
+            .whitebox
+                width: 600px
+                height: 150px
+                box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03)
+                border-radius: 4px
+
+                p
+
+                    padding-left: 14px
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 160%
+                    color: #424551
+
+        .other
+
+            .construction
+
+                img
+
+                    width: 400px
+
+                a
+                    h3
+                        padding-top: 20px
+                        padding-left: 14px
+                        font-weight: 700
+                        font-size: 20px
+                        line-height: 150%
+                        text-decoration: none
+
+                        &:hover
+                            color: #FF5A30
+
+                .whitebox
+
+                    width: 400px
+                    height: 100px
+                    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03)
+                    border-radius: 4px
+
+                    .info
+
+                        display: flex
+
+                        .comments
+                            width: 14px
+                            text-align: center
+                            margin-left: 7px
+
+                        p
+                            padding-left: 14px
+                            font-family: 'Ubuntu'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 150%
+                            display: flex
+                            align-items: center
+                            color: #787A80
+
+                    p
+
+                        padding-left: 14px
+                        font-weight: 400
+                        font-size: 12px
+                        line-height: 160%
+                        color: #424551
+
+            .flooring
+
+                img
+
+                    width: 400px
+
+                a
+                    h3
+                        padding-top: 20px
+                        padding-left: 14px
+                        font-weight: 700
+                        font-size: 20px
+                        line-height: 150%
+                        text-decoration: none
+
+                        &:hover
+                            color: #FF5A30
+
+                .whitebox
+
+                    width: 400px
+                    height: 100px
+                    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03)
+                    border-radius: 4px
+
+                    .info
+
+                        display: flex
+
+                        .comments
+                            width: 14px
+                            text-align: center
+                            margin-left: 7px
+
+                        p
+                            padding-left: 14px
+                            font-family: 'Ubuntu'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 150%
+                            display: flex
+                            align-items: center
+                            color: #787A80
+
+                    p
+
+                        padding-left: 14px
+                        font-weight: 400
+                        font-size: 12px
+                        line-height: 160%
+                        color: #424551
+
+    .explore
+        display: flex
+        margin: 0 auto
+        justify-items: center
+        width: 40%
+        padding-top: 85px
+        h3
+            font-weight: 700
+            font-size: 28px
+            line-height: 150%
+        button
+            @include frontbuttons
+            background-color: #FF5A30
+            border-radius: 4px
+            margin-left: 24px
+            order: 1
+            border: none
+
+// DISCUSS SECTION
+
+.discuss
+    height: 700px
+    background-image: url(../../img/buildings/image.jpg)
+
+    position: relative
+
+    .details
+        position: absolute
+        width: 400px
+        height: 650px
+        right: 345px
+        top: calc(50% - 600px/2)
+        background: #FFFFFF
+        border: 1px solid #E5E8ED
+        box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05)
+        border-radius: 4px
+
+        h2
+            @include centertext()
+            font-size: 18px
+            padding-top: 48px
+
+        .inputs
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            width: 80%
+            padding-top: 4px
+            .input
+                padding-top: 20px
+
+                p
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 150%
+                    color: #424551
+
+                input
+                    margin-top: 10px
+                    background: #F4F5F7
+                    border: 1px solid #D7DADD
+                    border-radius: 4px
+                    width: 100%
+                    height: 50px
+
+                    padding-left: 12px
+    .check
+        padding-top: 15px
+        display: flex
+        margin: 0 auto
+        justify-content: space-between
+        width: 80%
+
+        input
+            color: white
+            background-color: #FF5A30
+
+        p
+            margin-left: -7px
+            font-weight: 400
+            font-size: 13px
+            line-height: 150%
+
+    button
+        @include frontbuttons
+        background-color: #FF5A30
+        border: none
+        text-align: center
+        margin: 0 auto
+        display: flex
+        margin-top: 24px
+        width: 60%
+
+// FOOTER
+
+footer
+    height: 500px
+    background-color: #1E212C
+
+    .text
+
+        padding-top: 80px
+
+        width: 80%
+        display: flex
+        margin: 0 auto
+        justify-content: space-between
+
+        .first
+            .logos
+
+                display: flex
+                margin: 0 auto
+                justify-content: space-between
+                .main
+                    height: 21px
+                ul
+                    width: 40%
+                    display: flex
+                    margin: 0 auto
+                    justify-content: space-between
+
+            p
+                padding-top: 24px
+                color: #FFFFFF
+                opacity: 0.6
+                font-weight: 400
+                font-size: 14px
+                line-height: 150%
+
+        .stayintouch
+
+            h2
+                font-weight: 700
+                font-size: 24px
+                line-height: 150%
+                color: #FFFFFF
+                padding-bottom: 24px
+
+            .sub
+                height: 44px
+
+                display: flex
+                input
+
+                    background: rgba(255, 255, 255, 0.12)
+                    border: 1px solid rgba(255, 255, 255, 0.2)
+                    border-radius: 4px 0px 0 4px
+                    width: 330px
+                button
+
+                    text-transform: uppercase
+                    background: #FF5A30
+                    border-radius: 0px 4px 4px 0px
+                    align-items: center
+
+                    color: white
+                    font-weight: 700
+                    font-size: 14px
+                    letter-spacing: 0.5px
+                    height: 100%
+                    width: 120px
+                    border: none
+                    cursor: pointer
+
+            p
+
+                padding-top: 24px
+                color: #FFFFFF
+                opacity: 0.6
+                font-weight: 400
+                font-size: 12px
+                line-height: 150%
+
+    .info
+        width: 80%
+        margin: 0 auto
+        padding-top: 50px
+        .voo
+            width: 80%
+            display: flex
+            justify-content: space-between
+
+            .head
+
+                .pipa
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 150%
+                    display: flex
+                    align-items: center
+                    letter-spacing: 1px
+                    text-transform: uppercase
+                    color: #FFFFFF
+                .nepipa
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 160%
+                    color: #FFFFFF
+                    flex: none
+                    order: 1
+                    flex-grow: 0
+                    span
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 160%
+                        color: #FFFFFF
+                        opacity: 0.6
+                        flex: none
+                        order: 1
+                        flex-grow: 0
+
+                        padding-bottom: 30px
+
+        .end
+            display: flex
+            justify-content: space-between
+            .rights
+                margin-bottom: -30px
+                display: flex
+                align-items: center
+                width: 26%
+                justify-content: space-between
+                p
+                    font-family: 'Ubuntu'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 150%
+                    display: flex
+                    align-items: center
+                    color: #FFFFFF
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            .back
+                display: flex
+                justify-content: space-between
+                width: 13%
+
+                p
+                    color: #FFFFFF
+                    flex: none
+                    order: 0
+                    align-self: flex-end
+                    flex-grow: 0
+
+                button
+                    cursor: pointer
+                    background: none
+                    border: none
+
+// 
+    //  SERVICES PAGE
+
+.headerservices
+
+    background-image: url(../../img/backgrounds/blueprint.png)
+    background-position: right center
+    background-repeat: no-repeat
+    height: 600px
+
+    .tsvet
+        padding-top: 10px
+        width: 80%
+        display: flex
+        margin: 0 auto
+        align-items: center
+
+        .biba
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .logo
+                margin-right: 70px
+            .links
+                margin-right: 70px
+                ul
+                    list-style-type: none
+                    display: flex
+                    justify-content: space-between
+                    margin: 0 auto
+                    width: 400px
+                    li
+                        a
+                            text-decoration: none
+                            font-weight: 500
+                            color: #424551
+                            font-size: 16px
+                            span
+                                color: #FF5A30
+                        a:hover
+                            color: black
+                            
+
+            .contacts
+                display: flex
+                width: 100%
+                justify-content: space-between
+                .callus
+                    display: flex
+                    line-height: 150%
+                    width: 166px
+                    justify-content: space-between
+                    .img
+                        align-items: center
+                    .pipi
+                        @include pipi()
+                    .nepipi
+                        @include nepipi()
+
+                .talktous
+                    display: flex
+                    line-height: 150%
+                    width: 210px
+                    justify-content: space-between
+                    .img
+                        align-items: center
+                    .pipi
+                        @include pipi()
+                    .nepipi
+                        @include nepipi()
+
+    .pipin
+
+        width: 80%
+        margin: 0 auto
+
+        .short
+            padding-top: 70px
+            color: #424551
+            span
+                color: #9A9CA5
+
+        h2
+            padding-top: 40px
+            font-family: 'Ubuntu'
+            font-style: normal
+            font-weight: 700
+            font-size: 72px
+            line-height: 130%
+            letter-spacing: 1px
+            color: #1E212C
+
+        .desc
+            padding-top: 20px
+            font-family: 'Ubuntu'
+            font-style: normal
+            font-weight: 400
+            font-size: 20px
+            line-height: 150%
+            color: #787A80
+
+.serviceslist
+
+    height: 2100px
+
+    width: 80%
+    margin: 0 auto
+    flex-direction: column
+    padding-bottom: 180px
+
+    .bibon
+        display: flex
+        padding-top: 100px
+        margin: 0 auto
+
+        img
+            height: 80%
+
+        .desc
+
+            h3
+                font-weight: 700
+                font-size: 32px
+                line-height: 150%
+                color: #1E212C
+
+            p
+                padding-top: 20px
+                font-weight: 400
+                font-size: 14px
+                line-height: 160%
+                color: #787A80
+                
+            button
+                margin-top: 40px
+                width: 172px
+                height: 44px
+                border: 1px solid #FF5A30
+                border-radius: 4px
+                background: none
+                text-align: center
+                letter-spacing: 0.5px
+                text-transform: uppercase
+                color: #FF5A30
+                margin-top: 24px
+                margin-bottom: 24px
+                font-weight: 700
+
+                &:hover
+                    cursor: pointer
+        
+        .mister2
+            img
+                padding-left: 300px
+        
+        
+
+            
+        
+
+
