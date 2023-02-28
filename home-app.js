@@ -1,4 +1,4 @@
-// Add active class to navigation menu on click
+// * Add active class to navigation menu on click
 const navItems = document.querySelectorAll("nav a");
 navItems.forEach((item) => {
     item.addEventListener("click", () => {
@@ -9,8 +9,39 @@ navItems.forEach((item) => {
     });
 });
 
-// * smooth scroll
+// * navbar menu for mobile
+
+const menuToggle = document.querySelector(".menu-toggle button");
+const nav = document.querySelector("nav");
+
+
+menuToggle.addEventListener("click", () => {
+    document.querySelector("nav").classList.add("slide");
+    console.log("click");
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+        document.querySelector("nav").classList.remove("slide");
+    } else {
+        nav.classList.add("active");
+    }
+    
+});
+
+// * smooth scroll for navbar
 $("nav a").on("click", function (e) {
+    e.preventDefault();
+    var target = $(this).attr("href");
+    var $target = $(target);
+    $("html, body").animate(
+        {
+            scrollTop: $target.offset().top,
+        },
+        1000
+    );
+});
+
+// * smooth scroll for contact button
+$(".main-content a").on("click", function (e) {
     e.preventDefault();
     var target = $(this).attr("href");
     var $target = $(target);
@@ -86,8 +117,8 @@ function animateHeading() {
 animateHeading();
 
 // * discord link copy
-document.querySelector('#discord-link').addEventListener('click', function() {
-  const discordHandle = 'notalim#2105';
-  navigator.clipboard.writeText(discordHandle);
-  alert('tag copied to clipboard: ' + discordHandle);
+document.querySelector("#discord-link").addEventListener("click", function () {
+    const discordHandle = "notalim#2105";
+    navigator.clipboard.writeText(discordHandle);
+    alert("tag copied to clipboard: " + discordHandle);
 });

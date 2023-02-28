@@ -12,7 +12,7 @@ navItems.forEach((item) => {
 // * smooth scroll
 $("nav a").on("click", function (e) {
     var target = $(this).attr("href");
-    if (target === "/home.html") {
+    if (target === "index.html") {
         return;
     } else {
         e.preventDefault();
@@ -25,6 +25,24 @@ $("nav a").on("click", function (e) {
             1000
         );
     }
+});
+
+// * navbar menu for mobile
+
+const menuToggle = document.querySelector(".menu-toggle button");
+const nav = document.querySelector("nav");
+
+
+menuToggle.addEventListener("click", () => {
+    document.querySelector("nav").classList.add("slide");
+    console.log("click");
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+        document.querySelector("nav").classList.remove("slide");
+    } else {
+        nav.classList.add("active");
+    }
+    
 });
 
 const heading = document.querySelector("#social-text");

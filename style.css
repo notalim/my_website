@@ -4,7 +4,6 @@
     padding: 0;
     font-family: "SF Mono", SFMono-Regular, ui-monospace, "DejaVu Sans Mono",
         Menlo, Consolas, monospace;
-    
 }
 
 a {
@@ -75,6 +74,71 @@ nav a.active {
     color: #f8f8f8;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-toggle button img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav {
+        position: absolute;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #cb80ff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* align items to the left */
+        background-color: #241b35;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    nav {
+        display: flex;
+        list-style: none;
+    }
+
+    nav.slide {
+        transform: translateX(0);
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 10px;
+        padding: 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 10px;
+        color: #f8f8f8;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    nav .active {
+        height: auto;
+    }
+}
+
 .main-content {
     border-radius: 20px;
     box-shadow: 0 0 20px #cb80ff;
@@ -97,7 +161,7 @@ nav a.active {
 }
 
 .text-container {
-    height: 200px; /* set a fixed height */
+    height: 300px; /* set a fixed height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,7 +169,7 @@ nav a.active {
 }
 
 #header-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #ea94ff;
     margin-bottom: 0.5rem;
     height: 3rem; /* set a fixed height */
@@ -114,7 +178,7 @@ nav a.active {
 }
 
 .text-container p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #f8f8f8;
     margin-top: 0;
     margin-bottom: 0;
@@ -128,6 +192,14 @@ nav a.active {
     border-radius: 50%;
     margin: 0 auto 0 0;
     max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #header-text {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        line-height: 3rem;
+    }
 }
 
 .contact-button {
@@ -177,7 +249,7 @@ nav a.active {
 }
 
 .about-me h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #f8f8f8;
     margin-bottom: 1rem;
 }
@@ -204,6 +276,12 @@ nav a.active {
 
 .download-button:hover {
     background-color: #cb80ff;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-me {
+        height: 400px;
+    }
 }
 
 .portfolio-section {
@@ -234,7 +312,6 @@ nav a.active {
     background-color: #241b35;
     position: relative;
     transition: 500ms linear;
-    
 }
 
 .portfolio-card a {
@@ -276,7 +353,6 @@ nav a.active {
 .portfolio-card:hover {
     transform: translateY(-10px);
     transition: transform 0.3s ease-in-out;
-    
 }
 .portfolio-card a:hover {
     color: #cb80ff;
@@ -468,12 +544,11 @@ textarea {
 
 .project-cards {
     margin: 0 auto;
-    margin-top: 20px;
+
     display: flex;
     flex-wrap: wrap;
     width: 95%; /* Set to 100% */
     justify-content: space-between;
-    
 }
 
 .project-card {
@@ -528,6 +603,21 @@ textarea {
     background-color: #241b35;
     text-decoration: none;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .p-main-content h1 {
+        padding: 100px 0 0px;
+    }
+    .project-cards {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        width: 450px;
+        height: 400px;
+        margin-top: 50px;
+    }
 }
 
 .project-card::before {
@@ -629,7 +719,8 @@ textarea {
     margin-bottom: 10px;
 }
 
-.s-date, .s-soft {
+.s-date,
+.s-soft {
     margin: 0;
     font-size: 0.6rem;
     color: #f8f8f8;
@@ -651,4 +742,12 @@ textarea {
 .s-description-text {
     font-size: 1rem;
     line-height: 1.5;
+}
+
+@media only screen and (max-width: 1000px) {
+    .s-project-container {
+        margin-top: 120px;
+        align-items: center;
+        height: 700px;
+    }
 }
