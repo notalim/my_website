@@ -200,7 +200,6 @@ nav a.active {
     }
     .content-container img {
         height: 70%;
-        margin-right: -70px;
     }
 }
 
@@ -280,11 +279,6 @@ nav a.active {
     background-color: #cb80ff;
 }
 
-@media only screen and (max-width: 1000px) {
-    .about-me {
-        height: 600px;
-    }
-}
 
 .portfolio-section {
     background-color: #f8f8f8;
@@ -412,7 +406,7 @@ nav a.active {
 
 @media screen and (max-width: 768px) {
     .portfolio-card {
-        width: calc(50% - 20px);
+        width: 30%;
     }
 }
 
@@ -546,7 +540,6 @@ textarea {
 
 .project-cards {
     margin: 0 auto;
-
     display: flex;
     flex-wrap: wrap;
     width: 95%; /* Set to 100% */
@@ -607,18 +600,17 @@ textarea {
     font-size: 1rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
     .p-main-content h1 {
-        padding: 100px 0 0px;
+        padding: 20% 0 10%;
     }
     .project-cards {
-        width: 95%;
-        flex-wrap: wrap;
+        width: 90%;
+        flex-direction: row;
     }
     .project-card {
-        width: 450px;
-        height: 400px;
-        margin-top: 50px;
+        width: 250px;
+        margin-top: 0.3rem;
     }
 }
 
